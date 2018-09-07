@@ -18,7 +18,7 @@ public class TextMessageUtil implements BaseMessageUtil<MessageText>  {
 	}
 
 	@Override
-	public String initMessage(String fromUserName, String toUserName) {
+	public String initMessage(String toUserName , String fromUserName) {
 		MessageText msg = new MessageText();
 		msg.setToUserName(toUserName);
 		msg.setFromUserName(fromUserName);
