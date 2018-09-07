@@ -22,10 +22,9 @@ public class TextMessageUtil implements BaseMessageUtil<MessageText>  {
 		MessageText msg = new MessageText();
 		msg.setToUserName(toUserName);
 		msg.setFromUserName(fromUserName);
-		msg.setContent("这是机器人自动回复的信息");
+		msg.setContent("hello");
 		msg.setCreateTime(new Date().getTime());
 		msg.setMsgType("text");
-		System.out.println("===========msg is "+ msg.getContent());
 		return messageToXml(msg);
 	}
 }
