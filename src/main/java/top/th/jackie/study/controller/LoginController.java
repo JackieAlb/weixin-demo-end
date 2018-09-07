@@ -51,17 +51,16 @@ public class LoginController {
 		String content = map.get("Content");
 		String message =null;
 		if("text".equals(msgType)) {
-			if("1".equals(content)) {
-				TextMessageUtil textMessage = new TextMessageUtil();
-				message = textMessage.initMessage(fromUserName, toUserName);
-				System.out.println("======================xml message is "+ message);
-			}
+			TextMessageUtil textMessage = new TextMessageUtil();
+			message = textMessage.initMessage(fromUserName, toUserName);
+		}else {
+			message = "success"; 
 		}
 		
 		try {
 			out =response.getWriter();
 			out.write(message);
-			System.out.println("=================it is success");
+			out.flush();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}finally {
