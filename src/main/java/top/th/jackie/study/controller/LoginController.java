@@ -40,8 +40,9 @@ public class LoginController {
 	}
 	
 	@RequestMapping(value="wx", method = RequestMethod.POST)
-	public void dopost(HttpServletRequest request,HttpServletResponse response) {
+	public void doPost(HttpServletRequest request,HttpServletResponse response) {
 		response.setCharacterEncoding("utf-8");
+		System.out.println("=======================response");
 		PrintWriter out = null;
 		Map<String, String> map = MessageUtil.xmlToMap(request);
 		String toUserName = map.get("ToUserName");
