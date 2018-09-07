@@ -2,45 +2,45 @@ package top.th.jackie.study.entity;
 
 public class BaseMessage {
 
-		protected String toUserName;
-		protected String fromUserName;
-		protected long createTime;
-		protected String msgType;
+		protected String ToUserName;
+		protected String FromUserName;
+		protected long CreateTime;
+		protected String MsgType;
 
 		public BaseMessage() {
 			super();
 		}
 
 		public String getToUserName() {
-			return toUserName;
+			return ToUserName;
 		}
 
 		public void setToUserName(String toUserName) {
-			this.toUserName = toUserName;
+			this.ToUserName = toUserName;
 		}
 
 		public String getFromUserName() {
-			return fromUserName;
+			return FromUserName;
 		}
 
 		public void setFromUserName(String fromUserName) {
-			this.fromUserName = fromUserName;
+			this.FromUserName = fromUserName;
 		}
 
 		public long getCreateTime() {
-			return createTime;
+			return CreateTime;
 		}
 
 		public void setCreateTime(long createTime) {
-			this.createTime = createTime;
+			this.CreateTime = createTime;
 		}
 
 		public String getMsgType() {
-			return msgType;
+			return MsgType;
 		}
 
 		public void setMsgType(String msgType) {
-			this.msgType = msgType;
+			this.MsgType = msgType;
 		}
 	
 }

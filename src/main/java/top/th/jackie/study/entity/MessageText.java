@@ -2,8 +2,8 @@ package top.th.jackie.study.entity;
 
 public class MessageText  extends BaseMessage{
 
-	private String content;
-	private String msgId;
+	private String Content;
+	private String MsgId;
 	public MessageText() {
 		// TODO Auto-generated constructor stub
 	}
@@ -13,19 +13,19 @@ public class MessageText  extends BaseMessage{
 		this.setFromUserName(fromUserName);
 		this.setCreateTime(createTime);
 		this.setMsgType(msgType);
-		this.content = content;
-		this.msgId = msgId;
+		this.Content = content;
+		this.MsgId = msgId;
 	}
 	public String getContent() {
-		return content;
+		return Content;
 	}
 	public void setContent(String content) {
-		this.content = content;
+		this.Content = content;
 	}
 	public String getMsgId() {
-		return msgId;
+		return MsgId;
 	}
 	public void setMsgId(String msgId) {
-		this.msgId = msgId;
+		this.MsgId = msgId;
 	}
 }
