@@ -25,6 +25,7 @@ public class TextMessageUtil implements BaseMessageUtil<MessageText>  {
 		msg.setContent("这是机器人自动回复的信息");
 		msg.setCreateTime(new Date().getTime());
 		msg.setMsgType("text");
+		System.out.println("===========msg is "+ msg.getContent());
 		return messageToXml(msg);
 	}
 }

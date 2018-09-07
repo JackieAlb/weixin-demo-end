@@ -54,12 +54,14 @@ public class LoginController {
 			if("1".equals(content)) {
 				TextMessageUtil textMessage = new TextMessageUtil();
 				message = textMessage.initMessage(fromUserName, toUserName);
+				System.out.println("======================xml message is "+ message);
 			}
 		}
 		
 		try {
 			out =response.getWriter();
 			out.write(message);
+			System.out.println("=================it is success");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}finally {
