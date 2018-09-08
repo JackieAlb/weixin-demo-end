@@ -41,6 +41,7 @@ public class CoreController {
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
 		String respXml = CoreService.processRequest(request);
+		System.out.println(respXml);
 		PrintWriter out = response.getWriter();
 		out.print(respXml);
 		out.close();
