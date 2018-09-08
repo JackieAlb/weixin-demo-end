@@ -16,7 +16,7 @@ public class BaseMessage {
 		}
 
 		public void setToUserName(String toUserName) {
-			this.ToUserName = toUserName;
+			this.ToUserName = "<![CDATA["+toUserName +"]]>";
 		}
 
 		public String getFromUserName() {
@@ -24,7 +24,7 @@ public class BaseMessage {
 		}
 
 		public void setFromUserName(String fromUserName) {
-			this.FromUserName = fromUserName;
+			this.FromUserName = "<![CDATA["+fromUserName+"]]>";
 		}
 
 		public long getCreateTime() {
@@ -40,7 +40,7 @@ public class BaseMessage {
 		}
 
 		public void setMsgType(String msgType) {
-			this.MsgType = msgType;
+			this.MsgType = "<![CDATA["+msgType+"]]>";
 		}
 	
 }

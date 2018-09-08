@@ -53,6 +53,7 @@ public class LoginController {
 		if("text".equals(msgType)) {
 			TextMessageUtil textMessage = new TextMessageUtil();
 			message = textMessage.initMessage(fromUserName, toUserName);
+			System.out.println(message);
 		}else {
 			message = "success"; 
 		}
