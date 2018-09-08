@@ -1,5 +1,6 @@
 package top.th.jackie.study.entity;
 
+
 public class MessageText  extends BaseMessage{
 
 	private String Content;
