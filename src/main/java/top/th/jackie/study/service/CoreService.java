@@ -23,7 +23,7 @@ public class CoreService {
 		textMessage.setCreateTime(new Date().getTime());
 		textMessage.setMsgType(MessageUtil.RESP_MESSAGE_TYPE_TEXT);
 		if(msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_TEXT)) {
-			respContent = "您发送给我的是文本消息"+requestMap.get("Content");
+			respContent = fromUserName+" send message is "+requestMap.get("Content");
 		}
 		textMessage.setContent(respContent);
 		respXml = MessageUtil.messageToXml(textMessage);
